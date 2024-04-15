@@ -1,0 +1,138 @@
+\\ Exercicio 1: Soma 
+
+import java.util.Scanner;
+public class Soma {
+    public static void main(String[] args){
+
+        Scanner soma = new Scanner (System.in);
+
+        System.out.print("Informe o 1 valor que deseja somar: ");
+        int V1 = soma.nextInt();
+        System.out.print("Informe o  2 valor que deseja somar: ");
+        int V2 = soma.nextInt();
+        System.out.print("Informe o 3 valor que deseja somar: ");
+        int V3 = soma.nextInt();
+
+        soma.close();
+        System.out.println("O resultado da soma e: " + (V1+V2+V3) );
+
+    }
+}
+
+\\Exercicio 2: Subtracao
+
+import java.util.Scanner;
+public class Subtracao {
+    public static void main(String[] args){
+
+        Scanner subtracao = new Scanner (System.in);
+
+        System.out.print("Digite o valor que voce tem: ");
+        int Sub1 = subtracao.nextInt();
+        System.out.print("Agora digite valor deseja subtrair: ");
+        int Sub2 = subtracao.nextInt();
+
+
+
+        subtracao.close();
+        System.out.println("O valor ficou: " + (Sub1-Sub2) );
+
+    }
+}
+
+\\ Exercicio 3: Divisao
+
+import java.util.Scanner;
+public class Divisao {
+    public static void main(String[] args){
+
+        Scanner Div = new Scanner (System.in);
+
+        System.out.print("Informe o valor que deseja dividir: ");
+        double D1 = Div.nextDouble();
+        System.out.print("Informe o valor que deseja dividir: ");
+        double D2 = Div.nextDouble();
+
+
+
+        Div.close();
+        System.out.println("O resultado da divisao e: " + (D1+D2)/2 );
+
+    }
+}
+
+
+\\ Exercicio 4 : Media de notas
+
+
+import java.util.Scanner;
+public class FazerMedia {
+    public static void main(String[] args){
+
+        Scanner subtrai = new Scanner (System.in);
+
+        System.out.print("Informe a nota 1: ");
+        double Nota1 = subtrai.nextDouble();
+        System.out.print("Informe a nota 2: ");
+        double Nota2 = subtrai.nextDouble();
+        System.out.print("Informe a nota 3: ");
+        double Nota3 = subtrai.nextDouble();
+        System.out.print("Informe a nota 4: ");
+        double Nota4 = subtrai.nextDouble();
+
+
+
+        subtrai.close();
+        System.out.println("O resultado da divisao e: " + (Nota1+Nota2+Nota3+Nota4)/4);
+
+    }
+}
+
+\\ Exercicio 5: Soma, Subtração, Multiplicação e Divisão
+import java.util.Scanner;
+public class Resultados {
+    public static void main(String[] args){
+
+        Scanner resultados = new Scanner (System.in);
+
+        System.out.print("Informe a o 1 valor que deseja para efetuar a operacao: ");
+        double Valor1 = resultados.nextDouble();
+        System.out.print("Informe a o 2 valor que deseja para efetuar a operacao:");
+        double Valor2 = resultados.nextDouble();
+        
+
+
+
+        resultados.close();
+        System.out.println("O resultado da adicao e: " + (Valor1+Valor2));
+        System.out.println("O resultado da subtracao e: " + (Valor1-Valor2));
+        System.out.println("O resultado da multiplicacao e: " + (Valor1*Valor2));
+        System.out.println("O resultado da divisao e: " + (Valor1/Valor2));
+
+    }
+}
+
+\\ Exercio 6 : Desconto
+
+import java.util.Scanner;
+public class Desconto {
+    public static void main(String[] args){
+
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Insira o nome do Produto: ");
+        String Nome = scanner.nextLine();
+        System.out.print("Insira o valor do produto: ");
+        Double Desc1 = scanner.nextDouble();
+        System.out.print("Insira o valor do desconto: ");
+        Double Desc2 = scanner.nextDouble();
+        
+        
+        scanner.close();
+        Double ValorFinal = Desc1*(Desc2/100);
+        System.out.print("O valor total do produto ficou: "); 
+        System.out.print(Nome);
+        System.out.print(Desc1-ValorFinal);
+
+
+    }
+}
