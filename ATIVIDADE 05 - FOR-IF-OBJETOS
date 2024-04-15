@@ -1,0 +1,22 @@
+\\ Exercicio 3 : Leia os anos, meses e dias emostre-a expressa em dias. 
+
+import java.util.Scanner;
+public class anos {
+
+public static void main (String[] args){
+
+int anos, meses, dias, total;
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("Informe os anos: ");
+	anos = scanner.nextInt();
+	System.out.println("Informe os meses: ");
+	meses = scanner.nextInt();
+	System.out.println("Informe os dias: ");
+	dias = scanner.nextInt();
+
+	total= ((anos * 365) + (meses * 30) + dias);
+ System.out.println("O total de " + anos + " anos, " + meses + " meses e " + dias + " dias e: " + total + " dias! ");
+
+}
+}
