@@ -1,0 +1,182 @@
+\\Exercicio 1: Crie 10 variáveis
+
+public class DeclararVariavel {
+    public static void main(String[] args) {
+String ImpostodeRenda = "No money";
+int BlazeDinheiroFacil = 1000;
+Double NumeroMegaSena = 303540450026.00;
+String VoltaBrunaAssMas = "Tadinho do Gabriel";
+int AnosSolteiro = 2;
+String HarryPotter = "Leviosa";
+Double PopoVsBambam = 36.06;
+Double HorasJogadas = 2300.92;
+String UtorrentOficial = "link";
+int JogosPlatinados = 4;
+
+System.out.println("RESPOSTAS:");
+System.out.println(ImpostodeRenda);
+System.out.println(BlazeDinheiroFacil);
+System.out.println(NumeroMegaSena);
+System.out.println(VoltaBrunaAssMas);
+System.out.println(AnosSolteiro);
+System.out.println(HarryPotter);
+System.out.println(PopoVsBambam);
+System.out.println(HorasJogadas);
+System.out.println(UtorrentOficial);
+System.out.print(JogosPlatinados);
+}
+}
+
+
+\\Exercicio 2: Corrija os erros de nomenclatura 
+
+1. NomeProduto
+2. PrecoProduto
+3. MarcadoProduto
+4. QuantidadeProduto
+5. DescricaoProduto
+6. NomeProduto
+7. NumeroProduto
+8. PrecoDoProduto
+9. EstoqueDisponivel
+10. TotaldeProdutos
+
+
+\\Exercicio 3: Identificar o tipo de dado apropriado para cada variável
+
+import java.util.Scanner;
+public class FazerMedia {
+    public static void main(String[] args){
+
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.print("Nome do Aluno: ");
+        String Nome = scanner.nextLine();
+        System.out.print ("Idade do Aluno: ");
+        String Idade = scanner.nextLine();
+        System.out.print("Nota da Prova 1: ");
+        Double Nota1 = scanner.nextDouble();
+        System.out.print("Nota da Prova 2: ");
+        Double Nota2 = scanner.nextDouble();
+
+        scanner.close();
+        System.out.println("Nome: " + Nome);
+        System.out.println("Idade: " + Idade);
+        System.out.println("Media final: " + (Nota1 + Nota2)/2);
+
+
+    }
+}
+
+Exercicio 4: Criar um sistema para acompanhar a quantidade de cada produto em estoque
+
+public class ControleEstoque {
+    public static void main(String[] args) {
+
+String QuantidadeProduto1 = "10";
+       Double PrecoProduto1 = 15.00;
+        String QuantidadeProduto2 = "10";
+      Double PrecoProduto2 = 8.99;
+    String QuantidadeProduto3 = "10";
+        Double PrecoProduto3 = 40.00;
+       String CategoriaProduto1 = "Alimento";
+       String CategoriaProduto2 = "Bebida";
+       String CategoriaProduto3 = "Higiene";
+
+        String NomeProduto1 = "Lasanha de Microondas";
+        String NomeProduto2 = "Coca-Cola";
+        String NomeProduto3 = "Toalha";
+        
+        System.out.println("Estoque:");
+        System.out.println("Nome: " + NomeProduto1);
+        System.out.println("Categoria: " + CategoriaProduto1);
+        System.out.println("Preco: R$" + PrecoProduto1);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto1);
+        System.out.println("Nome: " + NomeProduto2);
+         System.out.println("Categoria: " + CategoriaProduto2);
+        System.out.println("Preco: R$" + PrecoProduto2);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto2);
+       System.out.println("Nome: " + NomeProduto3);
+        System.out.println("Categoria: " + CategoriaProduto3);
+        System.out.println("Preco: R$" + PrecoProduto3);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto3); 
+    }
+}
+
+
+\\Exercicio 5:  Criar variáveis para representar informações sobre produtos em um estoque
+
+public class ControleEstoque {
+    public static void main(String[] args) {
+
+String QuantidadeProduto1 = "10";
+       Double PrecoProduto1 = 70.00;
+        String QuantidadeProduto2 = "10";
+      Double PrecoProduto2 = 2500.00;
+    String QuantidadeProduto3 = "10";
+        Double PrecoProduto3 = 1500.00;
+        
+
+        String NomeProduto1 = "Fone de Ouvido Bluetooth";
+        String NomeProduto2 = "Laptop";
+        String NomeProduto3 = "SmartPhone";
+        
+        System.out.println("Estoque:");
+        System.out.println("Nome: " + NomeProduto1);
+        System.out.println("Preco: R$" + PrecoProduto1);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto1);
+        System.out.println("Nome: " + NomeProduto2);
+        System.out.println("Preco: R$" + PrecoProduto2);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto2);
+       System.out.println("Nome: " + NomeProduto3);
+        System.out.println("Preco: R$" + PrecoProduto3);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto3); 
+    }
+}
+
+\\Exercicio 6: Ajuste o código abaixo
+
+public class Main {
+    public static void main(String[] args) {
+       
+        String NumeroProduto = "ABC123"; 
+        double PrecoProduto = 25; 
+        
+        String DescricaoProduto = "";
+        
+        System.out.println("Descricao do Produto: " + DescricaoProduto);
+        
+        DescricaoProduto = "Fone de ouvido Bluetooth";
+        
+        System.out.println("Dados do Produto:");
+        System.out.println("Numero: " + NumeroProduto);
+        System.out.println("Preco: $" + PrecoProduto);
+        System.out.println("Descricao: " + DescricaoProduto);
+    }
+}
+
+\\Exercicio 7: Encontre e ajuste todos os problemas que existem nele
+
+public class ControleEstoque {
+    public static void main(String[] args) {
+     
+        
+       
+        String QuantidadeProduto = "10";
+        Double PrecoProduto = 29.99;
+        
+    
+        String MarcaProduto;
+        MarcaProduto = "true";
+
+        String NomeProduto = "Fone de Ouvido";
+    
+        
+        System.out.println("Dados do Produto:");
+        System.out.println("Nome: " + NomeProduto);
+        System.out.println("Marca: " + MarcaProduto);
+        System.out.println("Preco: $" + PrecoProduto);
+        System.out.println("Quantidade em estoque: " + QuantidadeProduto);
+    }
+}
+
