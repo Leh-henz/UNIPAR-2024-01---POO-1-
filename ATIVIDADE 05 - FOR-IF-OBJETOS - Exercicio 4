@@ -1,27 +1,24 @@
-\\ Exercicio 4: escreva quantos estão entre 0 e 100
+\\ Exercicio 4: Escreva quantos estão entre 0 e 100...
 
 import java.util.Scanner;
-public class numeros{
+public class entreNumeros {
 
-public static void main (String[] args){
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-	Scanner scanner = new Scanner(System.in);
-	
-int numeros = 0;
+        int numero = 0;
 
-for (int n = 1; n <= 20; n++) {
-	System.out.println("Informe o numero que deseja: ");
-	numeros = scanner.nextInt();
+        for (int n = 1; n <= 20; n++) {
+            System.out.println("Informe qualquer numero: ");
+            numero = scanner.nextInt();
 
-
-if (numeros >=0 && numeros <=100) {
-	System.out.println("Os seguintes numeros sao maiores que 0 e 100: " + numeros);
-}else if (numeros>=101 && numeros <=200){
-	System.out.println("Os seguintes numeros sao maiores que 101 e 200: " + numeros);
-} else { 
-System.out.println("Esses numeros sao maiores que 200: " + numeros);
-	  }
-    
+            if (numero >= 0 && numero <= 100) {
+                System.out.println("Esse numero esta entre 0 e 100: " + numero);
+            } else if (numero >= 101 && numero <= 200) {
+                System.out.println("Esse numero esta entre 101 e 200: " + numero);
+            } else {
+                System.out.println("Este numero e maior que 200: " + numero);
+            }
+        }
     }
-  }	
 }
